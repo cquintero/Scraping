@@ -1,2 +1,4 @@
 #Ignore Config
+__pycache__/
 config.py
+
