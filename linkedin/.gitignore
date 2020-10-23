@@ -1,4 +1,5 @@
 #Ignore Config
 __pycache__/
 config.py
-
+linkedin_sandbox.ipynb
+scraped_companies.csv
