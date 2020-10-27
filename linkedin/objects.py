@@ -7,11 +7,19 @@ class Company:
     webname: str = ''
     overview: str = ''
     website: str = ''
-    num_employees: int = None
-    six_month_growth: int = None
     industry: str = ''
     hq: str = ''
     founded: int = None
     specialties: str = ''
+    num_employees: int = None
+    six_month_growth: int = None
+    twelve_month_growth: int = None
+    two_year_growth: int = None
+    job_openings: int = None
     about_unreachable: bool = False
     insights_unreachable: bool = False
+
+
+@dataclass
+class Person:
+    url: str ''
