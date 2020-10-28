@@ -10,16 +10,10 @@ from objects import Company
 import config #or config_public 
 
 """
-# Project Goals: 
-# Learn about OOP
-# Replicate PhantomBuster functionality
-- Take in a Linkedin profile URL and scrape all major attributes
-
 #Next actions
--Add the ability for you to track where in a file you last scraped? or what line to start on?
--Add profile scraping
 -Add Search scraping
--Create list of tech companies in the US to monitor for hiring? Crunchbase database?
+-Add profile scraping
+-Create list of tech companies in the US to monitor for hiring trends? From the Crunchbase database?
 
 #Open Questions
 - How much rate limiting to implement / how many profiles or companies to scrape each day? 

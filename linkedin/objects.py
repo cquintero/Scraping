@@ -18,8 +18,3 @@ class Company:
     job_openings: int = None
     about_unreachable: bool = False
     insights_unreachable: bool = False
-
-
-@dataclass
-class Person:
-    url: str ''
