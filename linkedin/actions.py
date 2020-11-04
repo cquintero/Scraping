@@ -14,9 +14,13 @@ import config #or config_public
 -Add Search scraping
 -Add profile scraping
 -Create list of tech companies in the US to monitor for hiring trends? From the Crunchbase database?
+-Figure out how to do persistent cookies / sessions with specific users?
+-Add proxy / user agent support / change viewport / navigator.plugins  https://stackoverflow.com/questions/53039551/selenium-webdriver-modifying-navigator-webdriver-flag-to-prevent-selenium-detec/53040904#53040904
+
 
 #Open Questions
 - How much rate limiting to implement / how many profiles or companies to scrape each day? 
+- Better to create a few LI profiles and use phantombuster or use proxies / multilogin / 
 """
 
 class LinkedinScraper:
@@ -24,7 +28,10 @@ class LinkedinScraper:
     def __init__(self):
         self.options = Options()
         self.options.headless = config.headless
+        self.options.add_argument(f'user-agent={config.user_agent}')
         self.driver = webdriver.Chrome(config.driver_path, chrome_options=self.options)
+        
+
     
     def login(self):
         self.driver.get('https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin')
